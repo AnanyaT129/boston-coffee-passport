@@ -1,0 +1,17 @@
+Instructions for running the script:
+
+FIRST TIME RUNNING PYTHON FIREBASE SCRIPT:
+------------------------------------------
+1. Log into firebase project dashboard and go to Project Settings
+2. Under "Service Accounts" generate a new key for PYTHON
+3. Move that JSON file to the /scripts folder in this project and rename it "credentials"
+4. VERY IMPORTANT: ENSURE THIS FILE IS IN .gitignore. DO NOT PUSH THIS FILE TO THE REPOSITORY
+
+TO RUN THE SCRIPT:
+------------------
+1. Download data in Google Sheets "Visited" tab as .csv
+2. Clean up the data by removing all the empty rows and renaming any fields that need to be renamed
+3. Copy data into the "cafeDataInput.csv" file
+4. Run the uploadCsvToFirestore.py file and ensure printed outputs and Firestore data look okay
+
+NOTE: this script will not replace an existing record for a cafe. Delete all potential duplicates first. 
